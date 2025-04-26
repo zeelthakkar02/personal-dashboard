@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Personal Dashboard</h1>
+            <p>Manage your tasks, thoughts, and habits!</p>
+        </header>
+
+        <!-- To-Do List -->
+        <section id="tasks">
+            <h2>To-Do List</h2>
+            <input type="text" id="todo-input" placeholder="Add a new task">
+            <button onclick="addTodo()">Add Task</button>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <!-- Thought of the Day -->
+        <section id="thought-of-the-day">
+            <h2>Thought of the Day</h2>
+            <input type="text" id="thought-input" placeholder="Add your thought">
+            <button onclick="addThought()">Add Thought</button>
+            <ul id="thought-list"></ul>
+        </section>
+
+        <!-- Habit Tracker -->
+        <section id="habit-tracker">
+            <h2>Habit Tracker</h2>
+            <ul id="habit-list">
+                <li>
+                    <label>
+                        <input type="checkbox" id="habit1"> Drink Water
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="habit2"> Exercise
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" id="habit3"> Read
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Personal Dashboard</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
